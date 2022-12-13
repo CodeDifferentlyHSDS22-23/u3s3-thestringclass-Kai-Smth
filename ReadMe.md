@@ -1,11 +1,12 @@
 # U3S3
 
 * Part A - Foundations 4.3
-* Part B - Challenge
+* Part B - Foundations Practice 
+* Part C - Algorithm Challenge
 
 ## Part A
 ### Exercise 1
-Go to the package `labs.PartA` and open `ShoppingCart.java`
+Go to the package `labs.partA.ex01` and open `ShoppingCart.java`
 * Perform the following:
   * Use the indexOf method to get the index for the space
   character (" ") within custName
@@ -14,7 +15,7 @@ Go to the package `labs.PartA` and open `ShoppingCart.java`
   portion of custName
   * Assign it to firstName and print firstName
 ### Exercise 2
-* Go to the package `labs.PartA` and open `NameMaker.java`
+* Go to the package `labs.partA.ex02` and open `NameMaker.java`
   * Perform the following:
     * Declare String variables: firstName, middleName, lastName,
     and fullName
@@ -36,7 +37,7 @@ In the package `labs.partB.ex01` complete the `Indexing` per the following:
 
         Utilizing index on the pre-defined String, start at the first e and locate the index of the very next e.
 
-Your program is working correctly, if when run, the following is the output (Abe first name Lincoln last name):
+Your program is working correctly, if when run, the following is the output:
 ```
 10
 ```
@@ -108,10 +109,34 @@ g Java is a good time!
 
 ## Part C
 
-In this part of the lab you will complete `KeypadConversion`, the objective of your program should be to ask a user for a message and display that message as a series of key presses on a telephone keypad, seen here (https://en.wikipedia.org/wiki/Telephone_keypad)
+#### Step 01
 
-Ex1: Input = b then output = 22
+In the package `labs.partC` complete the `AlgoChallenge` per the following:
 
-Ex2: Input = y then output = 999
+### Problem 01
+The instructor provided you with a non-empty string and a number n.
+The instructor wants you to remove the letter at index n and provide a new string.
 
-Ex3: Input = abc then output = 222222
+Tip: Value of n should be a valid index of a given letter in the original string,
+such as 0 or str.length()-1 inclusive
+
+Example:
+```java
+missingLetter("kitten", 1) --> "ktten"
+missingLetter("kitten", 0) --> "itten"
+missingLetter("kitten", 4) --> "kittn"
+```
+
+### Problem 02
+Given the word of the day, take the last letter and
+return a new word of the day when you add the last letter to the front and back of the word.
+For example, "founder" yields "rfounderr".
+
+Tip: The word of the day will be a length 1 or more
+
+Example:
+```java
+wordOfDay("cat") --> "tcatt"
+wordOfDay("Hello" --> "oHelloo"
+wordOfDay("a") --> "aaa"
+```
