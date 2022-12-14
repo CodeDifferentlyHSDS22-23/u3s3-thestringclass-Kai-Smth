@@ -15,7 +15,7 @@ Go to the package `labs.partA.ex01` and open `ShoppingCart.java`
   portion of custName
   * Assign it to firstName and print firstName
 ### Exercise 2
-* Go to the package `labs.partA.ex02` and open `NameMaker.java`
+* Go to the package `labs.partA.ex02`, open `NameMaker.java`, and place your code in between the two comments
   * Perform the following:
     * Declare String variables: firstName, middleName, lastName,
     and fullName
