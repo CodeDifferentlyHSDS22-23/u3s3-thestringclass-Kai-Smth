@@ -6,7 +6,7 @@ public class Extraction {
         String response = "";
         String greeting = "Learning Java is a good time!";
 
-        /** Your code goes here*/
+        /* Your code goes here*/
 
 
         return response;
