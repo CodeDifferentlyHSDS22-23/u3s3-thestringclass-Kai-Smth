@@ -4,8 +4,10 @@ public class Indexing {
     public static String index() {
         String response = "";
         String myStr = "Hello planet earth, you are a great planet.";
-        /**Your code goes here*/
 
+        int idx1 = myStr.indexOf('e');
+        int idx2 = myStr.indexOf('e', idx1 + 1);
+        response += (idx2);
         return response;
     }
 
@@ -13,5 +15,6 @@ public class Indexing {
         String indexOutput = index();
         System.out.println(indexOutput);
     }
-    }
+}
+
 
