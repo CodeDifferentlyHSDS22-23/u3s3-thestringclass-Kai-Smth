@@ -1,36 +1,30 @@
-package com.codedifferently.labs.partC;
+package labs.partC;
 
 public class AlgoChallenge {
 
-/* Problem 1
-    The instructor provided you with a non-empty string and a number n.
-    The instructor wants you to remove the letter at index n and provide a new string.
-    Tip: Value of n should be a valid index of a given letter in the original string,
-    such as 0 or str.length()-1 inclusive
-    missingLetter("kitten", 1) --> "ktten"
-    missingLetter("kitten", 0) --> "itten"
-    missingLetter("kitten", 4) --> "kittn"
-     */
-
-    public static String missingLetter(String letter, int n) {
-
-        return null;
+    public static String missingLetter(String str, int n) {
+        if (n < 0 || n >= str.length()) {
+            throw new IllegalArgumentException("Invalid index");
+        }
+        
+        String result = str.substring(0, n) + str.substring(n + 1);
+        return result;
     }
-
-    /* Problem 2
-    Given the word of the day, take the last letter and
-    return a new word of the day when you add the last letter to the front and back of the word.
-    For example, "founder" yields "rfounderr".
-    Tip: The word of the day will be a length 1 or more
-    wordOfDay("cat") --> "tcatt"
-    wordOfDay("Hello" --> "oHelloo"
-    wordOfDay("a") --> "aaa"
-     */
 
     public static String wordOfDay(String word) {
-
-        return null;
+        char lastChar = word.charAt(word.length() - 1);
+        
+        String result = lastChar + word + lastChar;
+        return result;
     }
 
-}
+    public static void main(String[] args) {
+        System.out.println(missingLetter("kitten", 1));  // Output: "ktten"
+        System.out.println(missingLetter("kitten", 0));  // Output: "itten"
+        System.out.println(missingLetter("kitten", 4));  // Output: "kittn"
 
+        System.out.println(wordOfDay("cat"));    // Output: "tcatt"
+        System.out.println(wordOfDay("Hello"));  // Output: "oHelloo"
+        System.out.println(wordOfDay("a"));      // Output: "aaa"
+    }
+}
